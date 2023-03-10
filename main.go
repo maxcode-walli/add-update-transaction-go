@@ -14,8 +14,8 @@ import (
 //}
 
 func AddUpdateTransaction(w http.ResponseWriter, req *http.Request) {
+	w.Header().Set("Access-Control-Allow-Origin", "*")
 	if req.Method == http.MethodOptions {
-		w.Header().Set("Access-Control-Allow-Origin", "*")
 		w.Header().Set("Access-Control-Allow-Methods", "POST, PUT")
 		w.Header().Set("Access-Control-Allow-Headers", "*")
 		w.WriteHeader(http.StatusNoContent)
