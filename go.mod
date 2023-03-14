@@ -2,7 +2,10 @@ module example.com/module
 
 go 1.19
 
-require cloud.google.com/go/pubsub v1.28.0
+require (
+	cloud.google.com/go/pubsub v1.28.0
+	project.maxcode.net/tfs/Apollo/Blizzard/_git/walli-events.git v0.0.0-20230314122212-5b45dc682d65
+)
 
 require (
 	cloud.google.com/go v0.110.0 // indirect
