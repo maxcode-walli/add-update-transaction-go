@@ -14,3 +14,7 @@ steps:
       - --allow-unauthenticated
       - --runtime=go119
       - --entry-point=AddUpdateTransaction
+    env:
+      - 'GOPRIVATE=project.maxcode.net/tfs/Apollo/*'
+      - 'GONOSUMDB=project.maxcode.net/tfs/Apollo/*'
+      - 'GOPROXY=https://catalin.joldescu:m6hok4knp3uca6g665s2vgjbbydxyfrlljacoxs6jztmjaynvkxa@project.maxcode.net/tfs/Apollo/Blizzard'
